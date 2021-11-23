@@ -11,7 +11,8 @@ function App() {
   const [isSubmitted,setIsSubmitted] = useState(false);
   const [loader,setLoader] = useState(false);
   const [texter,setText] = useState("");
-  const [question,setQuestion] = useState("Please click on submit to start");
+  const [question,setQuestion] = useState("Please click on submit to start and wait for 3 seconds");
+  const [count,setCount] = useState(0);
   useEffect(async () => {
     setIsLoading(true);
 
@@ -34,6 +35,7 @@ function App() {
   }
 
   const checkHandler = () =>{
+    setCount(count+1);
     setTimeout(()=>{
       if(!loader ? setLoader(true):setLoader(false));
       if(isSubmitted)setIsSubmitted(false);
@@ -72,7 +74,7 @@ function App() {
       <textarea placeholder="Enter your Answer" onChange = {onAnswerHandler}/>
       <div><button onClick = {checkHandler} id = "submitButton">Submit</button></div>
       {isSubmitted && answerStats ? (<h3>{texter}</h3>):(<h3></h3>)}
-      {isSubmitted && !answerStats ? (<h3>{texter}</h3>):(<h3></h3>)}
+      {isSubmitted && !answerStats && count>1 ? (<h3>{texter}</h3>):(<h3></h3>)}
       </>
       )}  
     </main>
