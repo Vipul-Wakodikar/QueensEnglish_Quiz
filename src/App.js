@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -75,7 +74,7 @@ function App() {
       <div><button onClick = {checkHandler} id = "submitButton">Submit</button></div>
       {isSubmitted && answerStats ? (<h3>{texter}</h3>):(<h3></h3>)}
       {isSubmitted && !answerStats && count>1 ? (<h3>{texter}</h3>):(<h3></h3>)}
-      {count == 0? (<div></div>):(<div></div>)}
+      {count === 0? (<div></div>):(<div></div>)}
       </>
       )}  
     </main>
