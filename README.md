@@ -9,6 +9,9 @@ Given Game is a Quiz Game in which Random questions are provided to users and th
 
 **Miscellaneous**
 Questions are fetch from Api (https://jservice.io/api/random)
+Hooks used: useState, useEffect
+other tools: axios 
+
 
 
 
