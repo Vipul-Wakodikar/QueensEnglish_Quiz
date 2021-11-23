@@ -11,6 +11,7 @@ function App() {
   const [isSubmitted,setIsSubmitted] = useState(false);
   const [loader,setLoader] = useState(false);
   const [texter,setText] = useState("");
+  const [question,setQuestion] = useState("Please click on submit to start");
   useEffect(async () => {
     setIsLoading(true);
 
@@ -20,6 +21,7 @@ function App() {
       });
       const { data } = response;
       setContent(data);
+      setQuestion(content[0].question);
       setIsLoading(false);
     } catch (err) {
       console.log("Some Error occurred" + err);
@@ -66,7 +68,7 @@ function App() {
       <h4>Hello! Welcome to Quiz Game</h4>
       <h6>Please Enter your response on below Text Area and click on submit</h6>
       <div></div>
-      <p>{content[0].question}</p>
+      <p>{question}</p>
       <textarea placeholder="Enter your Answer" onChange = {onAnswerHandler}/>
       <div><button onClick = {checkHandler} id = "submitButton">Submit</button></div>
       {isSubmitted && answerStats ? (<h3>{texter}</h3>):(<h3></h3>)}
