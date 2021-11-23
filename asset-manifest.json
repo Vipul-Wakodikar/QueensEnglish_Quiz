@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/QueensEnglish_Quiz/static/css/main.ef3e13f2.chunk.css",
-    "main.js": "/QueensEnglish_Quiz/static/js/main.7a23368a.chunk.js",
-    "main.js.map": "/QueensEnglish_Quiz/static/js/main.7a23368a.chunk.js.map",
+    "main.css": "/QueensEnglish_Quiz/static/css/main.d2fd025d.chunk.css",
+    "main.js": "/QueensEnglish_Quiz/static/js/main.df352252.chunk.js",
+    "main.js.map": "/QueensEnglish_Quiz/static/js/main.df352252.chunk.js.map",
     "runtime-main.js": "/QueensEnglish_Quiz/static/js/runtime-main.db14c68e.js",
     "runtime-main.js.map": "/QueensEnglish_Quiz/static/js/runtime-main.db14c68e.js.map",
     "static/js/2.a0096bdb.chunk.js": "/QueensEnglish_Quiz/static/js/2.a0096bdb.chunk.js",
@@ -10,14 +10,13 @@
     "static/js/3.ad412eb1.chunk.js": "/QueensEnglish_Quiz/static/js/3.ad412eb1.chunk.js",
     "static/js/3.ad412eb1.chunk.js.map": "/QueensEnglish_Quiz/static/js/3.ad412eb1.chunk.js.map",
     "index.html": "/QueensEnglish_Quiz/index.html",
-    "static/css/main.ef3e13f2.chunk.css.map": "/QueensEnglish_Quiz/static/css/main.ef3e13f2.chunk.css.map",
-    "static/js/2.a0096bdb.chunk.js.LICENSE.txt": "/QueensEnglish_Quiz/static/js/2.a0096bdb.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/QueensEnglish_Quiz/static/media/logo.6ce24c58.svg"
+    "static/css/main.d2fd025d.chunk.css.map": "/QueensEnglish_Quiz/static/css/main.d2fd025d.chunk.css.map",
+    "static/js/2.a0096bdb.chunk.js.LICENSE.txt": "/QueensEnglish_Quiz/static/js/2.a0096bdb.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.db14c68e.js",
     "static/js/2.a0096bdb.chunk.js",
-    "static/css/main.ef3e13f2.chunk.css",
-    "static/js/main.7a23368a.chunk.js"
+    "static/css/main.d2fd025d.chunk.css",
+    "static/js/main.df352252.chunk.js"
   ]
 }
