@@ -25,7 +25,7 @@ function App() {
       setQuestion(content[0].question);
       setIsLoading(false);
     } catch (err) {
-      console.log("Some Error occurred" + err);
+      console.log('');
       setIsLoading(false);
     }
   }, [loader]);
