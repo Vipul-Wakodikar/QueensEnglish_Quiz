@@ -11,6 +11,8 @@ const Main = () =>{
     const [texter,setText] = useState("");
     const [question,setQuestion] = useState("Please click on submit to start and wait for 3 seconds");
     const [count,setCount] = useState(0);
+
+    //Getting API call
     useEffect(async () => {
       setIsLoading(true);
   
@@ -28,16 +30,20 @@ const Main = () =>{
       }
     }, [loader]);
   
+    // Below code is use to get the input from user using Text Area
     const onAnswerHandler = (event) => {
       setAnswer(event.target.value);
     }
-  
+
+    //Behaviour after clicking on submit 
     const checkHandler = () =>{
       setCount(count+1);
       setTimeout(()=>{
         if(!loader ? setLoader(true):setLoader(false));
         if(isSubmitted)setIsSubmitted(false);
+        //Clear text on next questions
         setText("");
+        //Clear text area
         var btn = document.getElementById('submitButton');
         let txtarea = document.querySelector('textarea');
         if(btn){
@@ -47,19 +53,20 @@ const Main = () =>{
         }
         
       },2000);
+      //Convert both Given answer and solution provided by User to lower case
+      //Correct answer block
       if(answer.toLowerCase() === content[0].answer.toLowerCase())
       {
         setIsSubmitted(true);
         setAnswerStats(true);
         setText(`You Won!!!, the Answer is "${content[0].answer}"`);
       }
+      //Incorrect Answer block
       else{
         setIsSubmitted(true);
         setAnswerStats(false);
         setText(`InCorrect, the Answer is "${content[0].answer}"`);
       }
-      //setLoader(false);
-      
     }
     return (
       <main>
